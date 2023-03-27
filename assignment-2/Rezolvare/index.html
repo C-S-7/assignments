@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="username">
+            <div class="username-container">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <i class="material-icons corect-username">
+                done
+            </i>
+            <i class="material-icons wrong-username">
+                close
+            </i>
+
+        </div>
+        
+        <div class="password">
+            <div class="password-container">
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="password">
+            </div>
+            <i class="material-icons corect-password">
+                done
+            </i>
+            <i class="material-icons wrong-password">
+                close
+            </i>
+        </div>
+        
+        <input type="submit" value="Login" class="submit" id="submit">
+
+        <div class="message"></div>
+
+    </div>
+</body>
+</html>

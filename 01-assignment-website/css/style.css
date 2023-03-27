@@ -1,0 +1,95 @@
+/* -----------------------------------------------HEADER--------------------------------------------------------------- */
+header {
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+header a {
+    padding: 1em;
+}
+
+header nav {
+    padding-top: 2.5em;
+    text-align: end;
+}
+
+#menu a {
+    color: darkgray;
+}
+
+#menu-icon {
+    width: 30px;
+}
+
+#menu-icon-div {
+    align-self: center;
+    text-align: end;
+}
+
+
+/* --------------------------------------------HERO SECTION------------------------------------------------------------ */
+
+#hero-image {
+    position: relative;
+    width: 100%;
+
+}
+
+#div-hero {
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+
+#citat {
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(13, 172, 124);
+    padding: 0.8em;
+    top: 17%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 500px) {
+    #citat {
+        font-size: 20px;
+    }
+}
+
+/* --------------------------------------------FROM THE BLOG SECTION---------------------------------------------------- */
+
+
+
+
+/* --------------------------------------------DARK SECTION------------------------------------------------------------ */
+#dark-section {
+    background-color: rgb(37, 37, 37);
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+#recent-posts p {
+    line-height: 20%;
+    color: rgb(182, 181, 181);
+}
+
+#recent-work p {
+    margin: 0;
+    color: rgb(182, 181, 181);
+    line-height: 0;
+    padding: 0;
+}
+
+
+#dark-section hr {
+    opacity: 10%;
+    width: 95%
+}
+
+
+/* -----------------------------------------------FOOTER------------------------------------------------------------ */
+footer {
+    background-color: black;
+}

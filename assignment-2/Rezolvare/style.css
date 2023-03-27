@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F1ED;
+}
+
+.container {
+    height: 60vh;
+    width: 50vw;
+    border-radius: 40px;
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+    padding: 60px 35px 35px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.username, .password{
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+    width: 20vw;
+    margin: 2vh;
+}
+
+.username-container, .password-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.username-container input, .password-container input  {
+    height: 6vh;
+    border-radius: 25px;
+    outline: none;
+    margin: 1vh 0;
+    padding: 0 0 0 20px;
+    font-size: 1em;
+}
+
+
+.username label, .password label {
+    font-weight: bold;
+    padding-left: 6px;
+}
+
+.submit {
+    margin-top: 3vh;
+    height: 6vh;
+    width: 20vw;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    background: #24cfaa;
+    border:none;
+    transform: translateY(-3px);
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+}
+
+.submit:active {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+.corect-username {
+    position: relative;
+    z-index: 2;
+    top: -6vh;
+    left: 17vw;
+    display: none;
+    visibility: hidden;
+}
+
+.wrong-username {
+    position: relative;
+    z-index: 3;
+    top: -9.5vh;
+    left: 17vw;
+    visibility: hidden;
+}
+
+.corect-password {
+    position: relative;
+    z-index: 2;
+    top: -6vh;
+    left: 17vw;
+    display: none;
+    visibility: hidden;
+}
+
+.wrong-password {
+    position: relative;
+    z-index: 3;
+    top: -9.5vh;
+    left: 17vw;
+    visibility: hidden;
+}
+
+.corect {
+    color: green;
+    border: solid green;
+}
+
+.corect-icon {
+    visibility: visible;
+    color: green;
+
+}
+
+.wrong {
+    color: red;
+    border: solid red;
+}
+
+.wrong-icon {
+    visibility: visible;
+    color: red;
+}
+
+.message {
+    margin: 2vh 0;
+    width: 30vw;
+    padding-left: 6px;
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+}

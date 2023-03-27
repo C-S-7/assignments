@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Database</title>
+</head>
+
+<body>
+    <script>
+        function Student(name, address, phone, course) {
+            this.name = name;
+            this.address = address;
+            this.phone = phone;
+            this.course = course;
+            this.getInfo = function () {
+                return "Name: " + this.name + "\n" +
+                    "Adress: " + this.address + "\n" +
+                    "Phone: " + this.phone + "\n" +
+                    "Course: " + this.course
+            }
+        }
+            var student1 = new Student("Ion Andreescu", "Strada Unirii 3", 2038085633, "Istorie");
+            var student2 = new Student("Ina Maticiuc", "Matei Basarab 13/1", 2038081536, "Arte Plastice")
+            var student3 = new Student("Artur Botnaru", "Alexei Mateevici 25", 2012051536, "Fizica")
+            console.log(student1.getInfo());
+            console.log(student2.getInfo());
+            console.log(student3.getInfo());
+
+    </script>
+</body>
+
+</html>

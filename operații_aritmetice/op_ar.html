@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operații aritmetice</title>
+</head>
+
+<body>
+    <script>
+
+        let a = prompt("Please enter number A: ")
+        let c = prompt("Please enter operation: ")
+        let b = prompt("Please enter number B: ")
+
+        switch (c) {
+            case '+':
+                alert("Result is: " + (parseInt(a) + parseInt(b)))
+                break;
+            case '-':
+                alert("Result is: " + (parseInt(a) - parseInt(b)))
+                break;
+            case '*':
+                alert("Result is: " + parseInt(a) * parseInt(b))
+                break;
+            case '/':
+                alert("Result is: " + parseInt(a) / parseInt(b))
+                break;
+        }
+    </script>
+</body>
+
+</html>
