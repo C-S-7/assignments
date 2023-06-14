@@ -1,0 +1,94 @@
+*, *::after, *::before{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgb(255, 171, 64), rgb(255, 123, 76));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.clock {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 50%;
+    border: 10px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.clock .number {
+    --rotation: 0;
+    color: rgba(0, 0, 0, 0.8);
+    position:absolute;
+    font-size:3rem;
+    font-weight:bolder;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+}
+
+.clock .number1 {--rotation: 30deg;}
+.clock .number2 {--rotation: 60deg;}
+.clock .number3 {--rotation: 90deg;}
+.clock .number4 {--rotation: 120deg;}
+.clock .number5 {--rotation: 150deg;}
+.clock .number6 {--rotation: 180deg;}
+.clock .number7 {--rotation: 210deg;}
+.clock .number8 {--rotation: 240deg;}
+.clock .number9 {--rotation: 270deg;}
+.clock .number10 {--rotation: 300deg;}
+.clock .number11 {--rotation: 330deg;}
+
+.clock .hand {
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left:50%;
+    background-color: black;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    z-index: 10;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+    transform-origin: bottom;
+}
+
+.clock::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    z-index: 11;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px solid rgb(86, 86, 86);
+}
+
+.clock .hand.seconds {
+    width: 4px;
+    height: 45%;
+    background-color: rgb(213, 62, 62);
+    
+}
+
+.clock .hand.minutes {
+    width: 7px;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.76);
+    border: 1px solid rgba(255, 255, 255, .3);
+}
+
+.clock .hand.hours {
+    width: 11px;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.76);
+    border: 1px solid rgba(255, 255, 255, .2);
+}
